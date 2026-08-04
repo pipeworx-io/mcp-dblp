@@ -1,15 +1,18 @@
-# mcp-dblp
+# @pipeworx/dblp
 
-DBLP MCP — Computer Science bibliography
+DBLP MCP — Computer Science bibliography (~7M publications, ~3M authors). No auth.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `search_authors` | Search DBLP authors by name. Returns canonical id, affiliation, ORCID when available. |
-| `search_venues` | Search DBLP venues (conferences + journals). |
+- `search_publications(query, format?, hits?, first?)`
+- `search_authors(query, format?, hits?, first?)`
+- `search_venues(query, format?, hits?, first?)`
+
+## Data source
+
+`https://dblp.org/search/` — public REST API, returns JSON via `format=json`.
 
 ## Quick Start
 
@@ -25,7 +28,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -49,7 +52,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
