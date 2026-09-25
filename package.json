@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-dblp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "DBLP MCP — Computer Science bibliography",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-aeeae4a66617811bc2820daa477d84c0f67cd216d12a4cc106b8b417982d6f4a",
-    "sourceCommit": "839ab210d969ef7f822cd747ea516f6bb49e9231"
+    "sourceHash": "v1-8e3c9e60d8125c33511abebd16d1e931b8ea1176ed0778006a18555e86d3d0dd",
+    "sourceCommit": "56d3c46c09bb3078ffdbdbca992a93f406bcd382"
   }
 }
