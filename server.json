@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/dblp",
   "title": "Dblp",
   "description": "DBLP MCP — Computer Science bibliography",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "websiteUrl": "https://pipeworx.io/packs/dblp",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-dblp",
