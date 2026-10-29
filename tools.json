@@ -1,0 +1,74 @@
+[
+  {
+    "name": "search_publications",
+    "description": "Search DBLP publications. Match by title / author / year / venue. Default page size 30, max 1000.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search term — title / author / DOI / venue"
+        },
+        "hits": {
+          "type": "number",
+          "description": "Results per page, 1-1000 (default 30)"
+        },
+        "first": {
+          "type": "number",
+          "description": "0-based offset (default 0)"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "search_authors",
+    "description": "Search DBLP authors by name. Returns canonical id, affiliation, ORCID when available.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Author name (full or partial)"
+        },
+        "hits": {
+          "type": "number",
+          "description": "1-1000 (default 30)"
+        },
+        "first": {
+          "type": "number",
+          "description": "0-based offset"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "search_venues",
+    "description": "Search DBLP venues (conferences + journals).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Venue name or acronym (e.g. \"ICLR\", \"Nature\")"
+        },
+        "hits": {
+          "type": "number",
+          "description": "1-1000 (default 30)"
+        },
+        "first": {
+          "type": "number",
+          "description": "0-based offset"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  }
+]

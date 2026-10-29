@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-dblp",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "DBLP MCP — Computer Science bibliography",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-dblp": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "dblp"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-dblp.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/dblp",
   "pipeworx": {
-    "sourceHash": "v1-95edd7e3d90ebbc3a16240c41aea37ecf53b0e13a0e3b7caf00e2e8eb75fbce0",
-    "sourceCommit": "29fb434ca65fe0f61191f19c3502f583f5fb99d7"
+    "mode": "gateway",
+    "slug": "dblp",
+    "gatewaySlug": "dblp",
+    "sourceHash": "v1-c92b946c03d2aedc8fa50ac99c7df59fcbd19ec1fa8d91b6b20212e903ae5b95",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }
